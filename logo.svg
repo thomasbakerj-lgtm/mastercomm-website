@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="MasterComm International">
+  <defs>
+    <linearGradient id="mcGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD27A"/>
+      <stop offset="42%" stop-color="#F4B233"/>
+      <stop offset="100%" stop-color="#E11D3F"/>
+    </linearGradient>
+    <linearGradient id="mcSheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.32"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="mcCore" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#FFE9B8"/>
+      <stop offset="100%" stop-color="#F4B233"/>
+    </radialGradient>
+  </defs>
+
+  <!-- seal ring: enterprise / global / credential -->
+  <circle cx="50" cy="50" r="48.2" fill="none" stroke="#F4B233" stroke-opacity="0.30" stroke-width="1.1"/>
+  <circle cx="50" cy="50" r="44.5" fill="none" stroke="#F4B233" stroke-opacity="0.16" stroke-width="0.7"/>
+
+  <!-- compass star: guidance, power, deep research (facets) -->
+  <path d="M50.0,3.0 L53.64,41.22 L65.91,34.09 L58.78,46.36 L97.0,50.0 L58.78,53.64 L65.91,65.91 L53.64,58.78 L50.0,97.0 L46.36,58.78 L34.09,65.91 L41.22,53.64 L3.0,50.0 L41.22,46.36 L34.09,34.09 L46.36,41.22 Z" fill="url(#mcGrad)"/>
+  <path d="M50.0,3.0 L46.36,41.22 L34.09,34.09 L41.22,46.36 L3.0,50.0 L41.22,53.64 L34.09,65.91 L46.36,58.78 L50.0,97.0 L50,50 Z" fill="url(#mcSheen)"/>
+  <!-- facet seams for gem depth -->
+  <g stroke="#0b1230" stroke-opacity="0.18" stroke-width="0.5" fill="none">
+    <path d="M50,3 L50,97"/>
+    <path d="M3,50 L97,50"/>
+  </g>
+
+  <!-- core: the insight / value at the center -->
+  <circle cx="50" cy="50" r="6.4" fill="url(#mcCore)"/>
+  <circle cx="50" cy="50" r="6.4" fill="none" stroke="#0b1230" stroke-opacity="0.25" stroke-width="0.6"/>
+
+  <!-- network nodes at the cardinal tips: connection / referrals -->
+  <circle cx="50.0" cy="3.0" r="2.5" fill="#0b1230" stroke="#FFD27A" stroke-width="1"/>
+  <circle cx="97.0" cy="50.0" r="2.5" fill="#0b1230" stroke="#FFD27A" stroke-width="1"/>
+  <circle cx="50.0" cy="97.0" r="2.5" fill="#0b1230" stroke="#FFD27A" stroke-width="1"/>
+  <circle cx="3.0" cy="50.0" r="2.5" fill="#0b1230" stroke="#FFD27A" stroke-width="1"/>
+</svg>

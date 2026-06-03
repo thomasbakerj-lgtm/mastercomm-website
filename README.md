@@ -1,48 +1,38 @@
 # MasterComm International — Website
 
 A static, professional website for an independent technology advisor. No build
-step, no framework — just HTML, CSS, and a little JavaScript. It deploys to
-Vercel instantly.
+step, no framework — just HTML, CSS, and a little JavaScript. Deploys to Vercel
+instantly.
 
-## Files
+## Pages
+| File            | Purpose                                            |
+|-----------------|----------------------------------------------------|
+| `index.html`    | Home                                               |
+| `about.html`    | About                                              |
+| `services.html` | Services / practice areas                          |
+| `process.html`  | The MasterComm Method — 8-phase engagement framework |
+| `contact.html`  | Contact + request form                             |
+| `styles.css`    | Design system (fonts, colors, components)          |
+| `script.js`     | Mobile menu + scroll animations                    |
+| `logo.svg`      | Compass-star logomark (also used as favicon)       |
 
-| File           | Purpose                                  |
-|----------------|------------------------------------------|
-| `index.html`   | Home page                                |
-| `about.html`   | About page                               |
-| `services.html`| Services / practice areas                |
-| `contact.html` | Contact page with request form           |
-| `styles.css`   | All styling (the design system)          |
-| `script.js`    | Mobile menu + scroll animations          |
+## Brand at a glance
+- **Fonts:** Bricolage Grotesque (headlines) + Libre Franklin (body), loaded from Google Fonts.
+- **Colors:** deep royal navy base, bright gold (`--gold`) for power/value, crimson (`--crimson`) for passion. All defined in the `:root` block at the top of `styles.css` — change them there and the whole site updates.
+- **Logo:** a faceted compass star. Symbolism — the compass = guidance/trust; the rising gold-to-crimson gradient = aspiration meeting passion; nodes at the cardinal tips = network/referrals; the seal ring = enterprise credibility; the glowing core = the insight at the center of every engagement.
 
-## Customizing — the quick edits
-
-**1. Contact details (do this first).**
-Search every `.html` file for these placeholders and replace them:
-- `hello@mastercomm.example` → your real email
-- `+1 (000) 000-0000` and `+10000000000` → your real phone
-- `City, State` / `Country` in `contact.html` → your address
-
-**2. Brand colors.**
-Open `styles.css`. At the very top, the `:root` block defines every color.
-The gold accent is `--gold`. Change these values to match a logo or brand
-palette and the whole site updates.
-
-**3. Copy / wording.**
-All text lives directly inside the `.html` files between the tags. Edit freely.
-
-**4. Logo.**
-The wordmark is text ("Master**Comm**"). To use an image logo instead, replace
-the `.brand` block in each page's header with an `<img src="logo.png">`.
+## First edits to make
+Search every `.html` file and replace:
+- `hello@mastercomm.example` -> your real email
+- `+1 (000) 000-0000` and `+10000000000` -> your real phone
+- `City, State` / `Country` in `contact.html` -> your address
+- The `300+` / stat figures in `index.html` if you want different proof points.
 
 ## Turning the contact form into a real form (optional)
+The form currently opens the visitor's email client. To capture submissions
+automatically, create a free Formspree account and wrap the fields in
+`contact.html` with `<form action="https://formspree.io/f/XXXX" method="POST">`.
 
-Right now the contact form opens the visitor's email client. To collect
-submissions automatically, sign up for a free service like Formspree, then
-wrap the fields in `contact.html` with a `<form action="https://formspree.io/f/XXXX" method="POST">`
-tag. Their docs walk you through it.
-
-## Deploying
-
-Push these files to a GitHub repository, then import the repo into Vercel.
-Vercel auto-detects it as a static site — no configuration needed.
+## Deploy
+Push to a GitHub repo, import into Vercel. Vercel auto-detects a static site —
+no configuration needed. (Full step-by-step was provided separately.)
